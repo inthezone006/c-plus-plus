@@ -1,13 +1,3 @@
 ﻿  Main.cpp
-C:\Users\rahul\source\repos\Dealership\Dealership\Main.cpp(24,12): error C2731: 'WinMain': function cannot be overloaded
-      C:\Users\rahul\source\repos\Dealership\Dealership\Main.cpp(24,12):
-      see declaration of 'WinMain'
-  
-C:\Users\rahul\source\repos\Dealership\Dealership\Main.cpp(140,5): error C2360: initialization of 'hWndButton' is skipped by 'case' label
-      C:\Users\rahul\source\repos\Dealership\Dealership\Main.cpp(126,14):
-      see declaration of 'hWndButton'
-  
-C:\Users\rahul\source\repos\Dealership\Dealership\Main.cpp(143,5): error C2361: initialization of 'hWndButton' is skipped by 'default' label
-      C:\Users\rahul\source\repos\Dealership\Dealership\Main.cpp(126,14):
-      see declaration of 'hWndButton'
-  
+C:\Users\rahul\source\repos\Dealership\Dealership\Main.cpp(132,30): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Dealership.vcxproj -> C:\Users\rahul\source\repos\Dealership\x64\Debug\Dealership.exe
