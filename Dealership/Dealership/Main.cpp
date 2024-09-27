@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <tchar.h>
-#include <winuser.h>
 
 // Global variables
 
@@ -13,7 +12,7 @@
 static TCHAR szWindowClass[] = _T("DesktopApp");
 
 // The string that appears in the application's title bar.
-static TCHAR szTitle[] = _T("Dealership");
+static TCHAR szTitle[] = _T("Windows Desktop Guided Tour Application");
 
 // Stored instance handle for use in Win32 API calls such as FindResource
 HINSTANCE hInst;
@@ -73,7 +72,7 @@ int WINAPI WinMain(
         szTitle,
         WS_OVERLAPPEDWINDOW,
         CW_USEDEFAULT, CW_USEDEFAULT,
-        1000, 500,
+        500, 100,
         NULL,
         NULL,
         hInstance,
@@ -135,21 +134,6 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
         EndPaint(hWnd, &ps);
         break;
-    case WM_CREATE:
-        HWND hWndButton = CreateWindow(
-            _T("Button"),
-            _T("Okay"),
-            WS_TABSTOP | WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON,
-            10,
-            10,
-            100,
-            100,
-            hWnd,
-            NULL,
-            (HINSTANCE)GetWindowLongPtr(hWnd, GWLP_HINSTANCE),
-            NULL);
-
-        return 0;
     case WM_DESTROY:
         PostQuitMessage(0);
         break;
